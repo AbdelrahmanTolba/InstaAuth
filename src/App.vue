@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <!-- <p>
+      <router-link to="/login">Go to login</router-link>
+      <router-link to="/">Go to homepage</router-link>
+    </p> -->
+
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "@/components/variables.scss";
+@import "@/components/main.scss";
+
+.cinemas__container {
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns:
+    [full-start] 1fr
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] 1fr [full-end];
+  margin: 0 auto;
 }
 </style>

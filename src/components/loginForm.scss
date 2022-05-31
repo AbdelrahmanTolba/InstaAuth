@@ -1,0 +1,65 @@
+.linking {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__forgetPassword,
+  &__signup,
+  &__sso {
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  &__forgetPassword {
+    color: $color__secondary;
+  }
+  &__signup,
+  &__sso {
+    color: #09f;
+    font-weight: 500;
+  }
+}
+.form {
+  width: 100%;
+  &__group {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__input {
+    height: 2rem;
+    width: 100%;
+    padding: 2rem 1rem;
+    border-radius: 4px;
+    color: $color__primary;
+    border: 1px solid $color__secondary;
+    &:focus,
+    &:active {
+      border-color: #09f;
+      box-shadow: inset 0 0 4px 0 #09f;
+      outline: none;
+    }
+    &:placeholder-shown,
+    &::placeholder {
+      color: $color__secondary;
+    }
+  }
+  &__label {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: $color__primary;
+  }
+  &__btn {
+    width: 100%;
+    background-color: $color__primary;
+    border: 1px solid $color__secondary;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+}
+.notAvalible {
+  opacity: 0.5;
+  cursor: default;
+}

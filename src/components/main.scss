@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 43.75em) /*900px*/ {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 25em) /*1100px*/ {
+  html {
+    font-size: 37.5%;
+  }
+}
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
