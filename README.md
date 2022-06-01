@@ -6,8 +6,7 @@
   </a>
 </div>
 
-
-## About ([Live Server :rocket:](https://629777d9976336077ada03e9--vermillion-tartufo-fb6fff.netlify.app/))
+## About (<a href="https://insta-auth.vercel.app" rel="noopener"> Live Server :rocket:</a>)
 I applied at Instabug as a Frontend Internship. I Received this challenge as part of the recruitment process. I was asked to develop a small application consisting of 3 pages(Login, Welcome, 404). In which the user can only log in with specific emails and passwords and validate them. Then if the email or password is wrong Error message appears else if the email and password are correct it goes to the welcome page which contains the email address that login and the logout button when clicking on it it goes back to the login page. I have little vue background knowledge, but I did my best to achieve technology best practices.
   
 ### Build with
