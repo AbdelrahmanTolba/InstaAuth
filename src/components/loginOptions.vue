@@ -32,6 +32,67 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/components/variables.scss";
-@import "@/components/loginOptions.scss";
+@import "@/style/main.scss";
+a {
+  text-decoration: none;
+}
+.login {
+  &__options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__option {
+    position: relative;
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.1rem;
+    padding: 1.8rem 15rem;
+    font-weight: 600;
+    user-select: none;
+    border-radius: 4px;
+    @media only screen and (max-width: 43.75em) /*700px*/ {
+      & {
+        padding: 1.8rem 10rem;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 0.75rem;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &--google {
+      background-color: #4285f4;
+    }
+    &--github {
+      background-color: #000;
+    }
+    &--microsoft {
+      @include customBorder($color__white, $color__gray--dark);
+    }
+
+    &--logo {
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      left: 0;
+      background-color: $color__white;
+      border-radius: 3px;
+      margin-left: 1rem;
+    }
+    &--microsoftBtn {
+      color: $color__gray--dark;
+    }
+    &--btn {
+      color: $color__white;
+    }
+  }
+}
 </style>
