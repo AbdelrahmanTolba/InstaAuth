@@ -1,13 +1,13 @@
 <div align="center">
-<a href="https://github.com/EmanOthman21/InstabugLogin" rel="noopener">
+<a href="https://github.com/AbdelrahmanTolba/InstaAuth" rel="noopener">  
   
 ![unknown](https://user-images.githubusercontent.com/90225424/171462311-d75e97fb-908b-4aba-93b4-c7c2d4108128.png)
 
-
+  </a>
 </div>
 
 
-  ## About
+## About ([Live Server :rocket:](https://629777d9976336077ada03e9--vermillion-tartufo-fb6fff.netlify.app/))
 I applied at Instabug as a Frontend Internship. I Received this challenge as part of the recruitment process. I was asked to develop a small application consisting of 3 pages(Login, Welcome, 404). In which the user can only log in with specific emails and passwords and validate them. Then if the email or password is wrong Error message appears else if the email and password are correct it goes to the welcome page which contains the email address that login and the logout button when clicking on it it goes back to the login page. I have little vue background knowledge, but I did my best to achieve technology best practices.
   
 ### Build with
@@ -22,11 +22,11 @@ I applied at Instabug as a Frontend Internship. I Received this challenge as par
 1. **_Clone the repository_**
 
 ```sh
-$ git clone https://github.com/EmanOthman21/InstabugLogin.git
+$ git clone https://github.com/AbdelrahmanTolba/InstaAuth.git
 ```
 2. **_Navigate to repository directory_**
 ```sh
-$ cd InstabugLogin
+$ cd InstaAuth
 ```
 
 3. **_Install dependencies_**
